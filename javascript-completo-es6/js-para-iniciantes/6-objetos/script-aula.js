@@ -19,8 +19,8 @@ var menu = {
   height: 50,
   backgroundColor: "#84e",
   metadeHeight() {
-    return this.height / 2; //25
-    // return height / 2; //60
+    return this.height / 2; // 25
+    // return height / 2; // 60
   },
 };
 

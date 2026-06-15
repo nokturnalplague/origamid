@@ -1,6 +1,6 @@
 // Qual o resultado da seguinte expressão?
 var total = 10 + (5 * 2) / 2 + 20;
-//R: 35
+// R: 35
 
 // Crie duas expressões que retornem NaN
 var expressao1 = "Teste" / 2;

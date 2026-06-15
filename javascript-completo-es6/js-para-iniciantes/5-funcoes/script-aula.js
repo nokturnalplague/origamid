@@ -64,15 +64,15 @@ function faltaVisitar(paisesVisitados) {
 var profissao = 'Designer';
 
 function dados() {
-  var nome = 'André';
-  var idade = 28;
+  var nome = 'Shisaki';
+  var idade = 23;
   function outrosDados() {
-    var endereco = 'Rio de Janeiro';
-    var idade = 29;
+    var endereco = 'Brusque';
+    var idade = 24;
     return `${nome}, ${idade}, ${endereco}, ${profissao}`;
   }
   return outrosDados();
 }
 
-console.log(dados());// Retorna 'André, 29, Rio de Janeiro, Designer'
+console.log(dados()); // Retorna 'Shisaki, 24, Brusque, Designer'
 console.log(outrosDados()); // retorna um erro
