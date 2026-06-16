@@ -9,11 +9,8 @@ console.log(x); // 30
 // não faz sentido colocar true/false como resultado do ternário, a condição já retorna isso
 var idade = 24;
 
-var podeBeber = idade >= 18 ? "Pode beber" : "Não pode beber";
+var podeBeber = idade >= 18 ? 'Pode beber' : 'Não pode beber';
 console.log(podeBeber);
 
-var possuiFaculdade = true
-if (possuiFaculdade)
-  console.log('Sim, possui');
-  
-
+var possuiFaculdade = true;
+if (possuiFaculdade) console.log('Sim, possui');

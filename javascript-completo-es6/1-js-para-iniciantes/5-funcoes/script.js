@@ -18,9 +18,9 @@ function nomeCompleto(nome, sobrenome) {
 // Crie uma função que verifica se um número é par
 function par(numero) {
   if (numero % 2 === 0) {
-    return "É par";
+    return 'É par';
   } else {
-    return "É ímpar";
+    return 'É ímpar';
   }
 }
 
@@ -36,8 +36,8 @@ function tipoDado(dado) {
 // o primeiro parâmetro é o evento que ocorre e o segundo o Callback
 // utilize essa função para mostrar no console o seu nome completo
 // quando o evento 'scroll' ocorrer.
-addEventListener("scroll", () => {
-  console.log("Shisaki Kirishima");
+addEventListener('scroll', () => {
+  console.log('Shisaki Kirishima');
 });
 
 // Corrija o erro abaixo

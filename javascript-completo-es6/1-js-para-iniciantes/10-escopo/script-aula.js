@@ -1,7 +1,7 @@
-"use strict"; // não permite criar variáveis globais
+'use strict'; // não permite criar variáveis globais
 
 function mostrarCarro() {
-  var carro = "Fusca";
+  var carro = 'Fusca';
   console.log(carro);
 }
 
@@ -9,14 +9,14 @@ mostrarCarro(); // Fusca no console
 // console.log(carro); // Erro: 'carro is not defined'
 
 if (false) {
-  const mes = "Junho";
+  const mes = 'Junho';
   console.log(mes);
 }
 
 // console.log(mes);
 
 {
-  var carro2 = "Fusca 2";
+  var carro2 = 'Fusca 2';
   const ano = 2018;
 }
 console.log(carro2); // Fusca
@@ -29,13 +29,13 @@ var i = 50;
 
 console.log(i * 10);
 
-const semana = "Sexta";
+const semana = 'Sexta';
 //semana = "Quinta";
 console.log(semana);
 
 const data = {
   ano: 2018,
-  mes: "Dezembro",
+  mes: 'Dezembro',
 };
 
 data.ano = 2019;

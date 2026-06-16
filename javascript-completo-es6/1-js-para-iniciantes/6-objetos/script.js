@@ -1,10 +1,10 @@
 // Crie um objeto com os seus dados pessoais
 // Deve possuir pelo menos duas propriedades nome e sobrenome
 var dados = {
-  nome: "Shisaki",
-  sobrenome: "Kirishima",
+  nome: 'Shisaki',
+  sobrenome: 'Kirishima',
   idade: 24,
-  cidade: "Brusque",
+  cidade: 'Brusque',
 };
 
 // Crie um método no objeto anterior, que mostre o seu nome completo
@@ -16,7 +16,7 @@ dados.nomeCompleto = function () {
 var carro = {
   preco: 1000,
   portas: 4,
-  marca: "Audi",
+  marca: 'Audi',
 };
 
 carro.preco = 3000;
@@ -24,14 +24,14 @@ carro.preco = 3000;
 // Crie um objeto de um cachorro que represente um labrador,
 // preto com 10 anos, que late ao ver um homem
 var cachorro = {
-  raca: "labrador",
-  cor: "preto",
+  raca: 'labrador',
+  cor: 'preto',
   idade: 10,
   latir(pessoa) {
-    if (pessoa === "homem") {
-      return "AU AU AU";
+    if (pessoa === 'homem') {
+      return 'AU AU AU';
     } else {
-      return "*Dormindo*";
+      return '*Dormindo*';
     }
   },
 };

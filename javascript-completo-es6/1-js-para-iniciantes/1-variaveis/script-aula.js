@@ -1,4 +1,4 @@
-var nome = "Shisaki";
+var nome = 'Shisaki';
 var idade = 24;
 var possuiFaculdade = true;
 
@@ -10,8 +10,8 @@ var totalPreco = preco * totalComprado;
 
 console.log(totalPreco);
 
-var sobrenome = "Shisaki",
-  cidade = "Brusque";
+var sobrenome = 'Shisaki',
+  cidade = 'Brusque';
 
 console.log(sobrenome, cidade);
 
@@ -26,9 +26,9 @@ comentário de múltiplas linhas
 
 var comida;
 console.log(comida);
-comida = "Pizza";
+comida = 'Pizza';
 console.log(comida);
 
-var time = "Vasco";
-time = "Flamengo";
+var time = 'Vasco';
+time = 'Flamengo';
 console.log(time);

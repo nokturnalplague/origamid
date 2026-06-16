@@ -4,20 +4,20 @@ var minhaIdade = 24;
 var idadeParente = 46;
 
 if (minhaIdade > idadeParente) {
-  console.log("É maior.");
+  console.log('É maior.');
 } else if (minhaIdade === idadeParente) {
-  console.log("É igual.");
+  console.log('É igual.');
 } else {
-  console.log("É menor.");
+  console.log('É menor.');
 }
 
 // Qual valor é retornado na seguinte expressão?
-var expressao = 5 - 2 && 5 - " " && 5 - 2;
+var expressao = 5 - 2 && 5 - ' ' && 5 - 2;
 // R: 3
 console.log(expressao);
 
 // Verifique se as seguintes variáveis são Truthy ou Falsy
-var nome = "Andre"; //truthy
+var nome = 'Andre'; //truthy
 var idade = 28; //truthy
 var possuiDoutorado = false; //falsy
 var empregoFuturo; //falsy
@@ -36,23 +36,23 @@ var brasil = 207;
 var china = 1340;
 
 if (brasil > china) {
-  console.log("O Brasil é maior.");
+  console.log('O Brasil é maior.');
 } else {
-  console.log("A China é maior.");
+  console.log('A China é maior.');
 }
 
 // O que irá aparecer no console?
-if ("Gato" === "gato" && 5 > 2) {
-  console.log("Verdadeiro");
+if ('Gato' === 'gato' && 5 > 2) {
+  console.log('Verdadeiro');
 } else {
-  console.log("Falso");
+  console.log('Falso');
 }
 // R: Falso
 
 // O que irá aparecer no console?
-if ("Gato" === "gato" || 5 > 2) {
-  console.log("Gato" && "Cão");
+if ('Gato' === 'gato' || 5 > 2) {
+  console.log('Gato' && 'Cão');
 } else {
-  console.log("Falso");
+  console.log('Falso');
 }
 // R: Cão

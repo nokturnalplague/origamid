@@ -21,17 +21,17 @@ function imc(peso, altura) {
 console.log(imc(64, 1.53));
 
 function corFavorita(cor) {
-  if (cor.toLowerCase() === "azul") {
-    return "Eu gosto do céu";
-  } else if (cor.toLowerCase() === "verde") {
-    return "Eu gosto de mato";
+  if (cor.toLowerCase() === 'azul') {
+    return 'Eu gosto do céu';
+  } else if (cor.toLowerCase() === 'verde') {
+    return 'Eu gosto de mato';
   } else {
-    return "Eu não gosto de nada";
+    return 'Eu não gosto de nada';
   }
 }
 
-addEventListener("click", () => {
-  console.log("Oi");
+addEventListener('click', () => {
+  console.log('Oi');
 });
 
 function imc2(peso, altura) {
@@ -43,8 +43,8 @@ function imc2(peso, altura) {
 imc2(64, 1.53);
 
 function terceiraIdade(idade) {
-  if (typeof idade !== "number") {
-    return "Por favor, insira um número";
+  if (typeof idade !== 'number') {
+    return 'Por favor, insira um número';
   } else if (idade >= 60) {
     return true;
   } else {

@@ -1,4 +1,4 @@
-var nome = "Shisaki";
+var nome = 'Shisaki';
 var nomeMinusculo = nome.toLowerCase();
 
-var btn = document.querySelector(".btn");
+var btn = document.querySelector('.btn');

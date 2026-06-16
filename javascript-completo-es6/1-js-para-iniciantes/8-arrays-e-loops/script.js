@@ -13,11 +13,11 @@ brasilGanhou.forEach((ano) => {
 // }
 
 // Interaja com um loop nas frutas abaixo e pare ao chegar em Pera
-var frutas = ["Banana", "Maçã", "Pera", "Uva", "Melancia"];
+var frutas = ['Banana', 'Maçã', 'Pera', 'Uva', 'Melancia'];
 
 for (let i = 0; i < frutas.length; i++) {
   console.log(frutas[i]);
-  if (frutas[i] === "Pera") {
+  if (frutas[i] === 'Pera') {
     break;
   }
 }

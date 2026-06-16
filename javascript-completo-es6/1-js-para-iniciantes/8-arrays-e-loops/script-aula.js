@@ -1,4 +1,4 @@
-var videoGames = ["Switch", "PS4", "Xbox", "3DS"];
+var videoGames = ['Switch', 'PS4', 'Xbox', '3DS'];
 
 // var ultimoItem = videoGames.pop();
 // videoGames.push("3DS");
@@ -23,7 +23,7 @@ for (let i = 0; i < videoGames.length; i++) {
   // }
 }
 
-var frutas = ['Banana', 'Pera', 'Maçã', 'Abacaxi', 'Uva']
+var frutas = ['Banana', 'Pera', 'Maçã', 'Abacaxi', 'Uva'];
 
 frutas.forEach(function (fruta, i, array) {
   console.log(fruta, i, array);
