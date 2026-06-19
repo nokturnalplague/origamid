@@ -254,12 +254,12 @@ body {
 }
 
 .js .js-accordion dt::after {
-  content: '\2935';
+  content: "\2935";
   margin-left: 10px;
 }
 
 .js .js-accordion dt.ativo::after {
-  content: '\2934';
+  content: "\2934";
   margin-left: 10px;
 }
 
@@ -269,7 +269,7 @@ body {
 
 .js .js-accordion dd.ativo {
   display: block;
-  animation: slideDown 0.5s forwards;
+  animation: slideDown .5s forwards;
 }
 
 @keyframes slideDown {
