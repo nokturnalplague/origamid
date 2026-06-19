@@ -22,6 +22,8 @@ function initTabNav() {
   }
 }
 
+initTabNav();
+
 function initAccordion() {
   const accordionList = document.querySelectorAll('.js-accordion dt');
   if (accordionList.length) {
@@ -39,5 +41,4 @@ function initAccordion() {
   }
 }
 
-initTabNav();
 initAccordion();

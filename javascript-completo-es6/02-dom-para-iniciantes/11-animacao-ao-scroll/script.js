@@ -26,6 +26,7 @@ initTabNav();
 
 function initAccordion() {
   const accordionList = document.querySelectorAll('.js-accordion dt');
+
   if (accordionList.length) {
     accordionList[0].classList.add(active);
     accordionList[0].nextElementSibling.classList.add(active);
@@ -51,13 +52,6 @@ function initScrollSuave() {
 
     const href = this.getAttribute('href');
     const section = document.querySelector(href);
-    // const sectionTop = section.getBoundingClientRect().top;
-
-    // FORMA ALTERNATIVA
-    // window.scrollTo({
-    //   top: sectionTop,
-    //   behavior: 'smooth',
-    // });
 
     section.scrollIntoView({
       behavior: 'smooth',
@@ -71,3 +65,27 @@ function initScrollSuave() {
 }
 
 initScrollSuave();
+
+function initScrollAnimation() {}
+const sections = document.querySelectorAll('.js-scroll');
+const window50 = window.innerHeight * 0.5;
+
+if (sections.length) {
+  function animaScroll() {
+    sections.forEach((section) => {
+      const sectionTop = section.getBoundingClientRect().top;
+      const isSectionVisible = sectionTop - window50 < 0;
+      if (isSectionVisible) {
+        section.classList.add(active);
+      } else {
+        section.classList.remove(active);
+      }
+    });
+  }
+
+  animaScroll();
+
+  window.addEventListener('scroll', animaScroll);
+}
+
+initScrollAnimation();
