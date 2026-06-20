@@ -11,7 +11,7 @@ function Pessoa(nome, idade) {
   this.nome = nome;
   this.idade = idade;
   this.andar = function () {
-    console.log(`${nome} andou.`);
+    console.log(`${this.nome} andou.`);
   };
 }
 
@@ -30,16 +30,15 @@ const bruno = new Pessoa('Bruno', 15);
 // removeClass(classe), remove a classe a todos os elementos
 
 function Dom(seletor) {
-  this.elements = function () {
-    return document.querySelectorAll(seletor);
-  };
+  const elements = document.querySelectorAll(seletor);
+  this.elements = elements;
   this.addClass = function (classe) {
-    this.elements().forEach((element) => {
+    elements.forEach((element) => {
       element.classList.add(classe);
     });
   };
   this.removeClass = function (classe) {
-    this.elements().forEach((element) => {
+    elements.forEach((element) => {
       element.classList.remove(classe);
     });
   };
