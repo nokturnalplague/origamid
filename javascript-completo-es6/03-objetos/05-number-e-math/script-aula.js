@@ -1,22 +1,22 @@
 const ano = 2026;
 const valor = new Number(99);
 
-// isNan()
+// Number.isNan()
 console.log(isNaN('str'));
 console.log(Number.isNaN(NaN));
 console.log(Number.isNaN('str'));
 console.log(Number.isNaN(5));
 
-// isInteger()
+// Number.isInteger()
 console.log(Number.isInteger(20));
 console.log(Number.isInteger(23.66));
 
-// parseFloat(str)
+// Number.parseFloat(str)
 console.log(Number.parseFloat('99.50'));
 console.log(Number.parseFloat('100 reais'));
 console.log(Number.parseFloat('R$ 100'));
 
-// parseInt(str, radix)
+// Number.parseInt(str, radix)
 console.log(Number.parseInt('99.50'));
 console.log(Number.parseInt('     99.50'));
 console.log(Number.parseInt('99.50 reais'));
