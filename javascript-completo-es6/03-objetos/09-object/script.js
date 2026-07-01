@@ -3,6 +3,7 @@ const pessoa = new Object({
 });
 
 const carro1 = {
+  marca: 'Ford',
   rodas: 4,
   init(valor) {
     this.marca = valor;
@@ -80,3 +81,44 @@ console.log(Object.entries(carro1));
 // Object.getOwnPropertyNames(obj)
 console.log(Object.getOwnPropertyNames(Array));
 console.log(Object.getOwnPropertyNames(Array.prototype));
+
+// Object.getPrototypeOf()
+const frutas = ['Banana'];
+console.log(Object.getPrototypeOf(frutas));
+console.log(Array.prototype);
+
+// Object.is()
+const frutas1 = ['Banana', 'Pêra'];
+const frutas2 = ['Banana', 'Pêra'];
+const novaFruta = frutas;
+
+console.log(Object.is(frutas1, frutas2));
+console.log(Object.is(frutas, novaFruta));
+
+// Object.freeze()
+Object.freeze(carro1);
+carro1.marca = 'Honda';
+console.log(carro1);
+
+// Object.seal()
+const kombi = {
+  rodas: 4,
+  portas: 2,
+};
+
+Object.seal(kombi);
+kombi.portas = 3;
+kombi.automatica = false;
+delete kombi.rodas;
+console.log(kombi);
+
+// Object.preentExtensions()
+Object.preventExtensions(carro2);
+delete carro2.capacete;
+carro2.rodas = 4;
+carro2.portas = 2;
+console.log(carro2);
+
+console.log(Object.isFrozen(carro1));
+console.log(Object.isSealed(kombi));
+console.log(Object.isExtensible(carro2));
